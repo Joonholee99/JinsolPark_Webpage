@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,11 +30,11 @@ nav ul li a {
 }
 
 main {
-    padding: 2rem;
+    padding: 0;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 #about {
@@ -50,7 +50,7 @@ section {
         font-size: 16px; /* 제목의 글씨 크기 */
         font-weight: bold; /* 제목을 굵게 설정 */}
     #about p {
-    font-size: 14px; /* 본문 글씨 크기 */
+    font-size: 12px; /* 본문 글씨 크기 */
     line-height: 1.5; /* 줄 간격 설정 */}
 
         
@@ -63,13 +63,13 @@ section {
     border: 1px solid white    
 }
     #exhibitions h2 {
-    font-size: 22px; /* 제목(h3) 크기 설정 */
+    font-size: 18px; /* 제목(h3) 크기 설정 */
     font-weight: bold; /* 추가 스타일링 예시: 굵게 */}
     #exhibitions h3 {
-    font-size: 22px; /* 제목(h3) 크기 설정 */
+    font-size: 18px; /* 제목(h3) 크기 설정 */
     font-weight: normal; /* 추가 스타일링 예시: 굵게 */}
     #exhibitions p {
-    font-size: 14px; /* 일반 텍스트(p) 크기 설정 */
+    font-size: 12px; /* 일반 텍스트(p) 크기 설정 */
     font-weight: normal;
     line-height: 1; /* 줄 간격 설정 */}
 
