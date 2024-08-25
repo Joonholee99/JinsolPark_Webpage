@@ -81,14 +81,19 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
+.slider-image.active {
+    display: block; /* 현재 활성화된 이미지만 표시합니다 */
+    animation: fade 1s ease-in-out; /* 부드러운 전환 애니메이션 */
+}
 
 .slider-image {
     width: 100%;
     height: auto;
-    display: block;
+    display: none;
     margin: 0 auto;
     object-fit: cover;
 }
+
 
 .project {
     border: none;
