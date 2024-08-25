@@ -39,8 +39,8 @@ section {
 
 #about {
     text-align: Left;
-    width: 100%;
-    max-width: 100%;
+    width: 100% auto;
+    max-width: 100% auto;
     margin: 0 auto;
     margin-left: 50%;
     padding: 1rem;
