@@ -73,7 +73,12 @@ section {
     font-weight: normal;
     line-height: 1; /* 줄 간격 설정 */}
 
-
+#SelectedWorks .caption {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: center;
+}
 
 .image-container {
     position: relative;
