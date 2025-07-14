@@ -74,6 +74,7 @@ section {
     line-height: 1; /* 줄 간격 설정 */}
 
 #SelectedWorks .caption {
+    font-family: 'Noto Serif KR', serif;
     font-size: 12px;
     line-height: 1.5;
     font-weight: normal;
