@@ -102,12 +102,14 @@ section {
     font-weight: normal;
     line-height: 1.3; /* 줄 간격 설정 */}
 
-/* Exhibitions 페이지 콘텐츠를 숨기고 레이아웃만 유지 */
-.exhibitions-closed #exhibitions .project,
-.exhibitions-closed #exhibitions .project-description,
-.exhibitions-closed #exhibitions .caption,
-.exhibitions-closed #exhibitions img {
-  visibility: hidden;   /* 레이아웃은 그대로 두고 화면만 가림 */
+/* exhibitions 내부 모든 자식 숨김 (공간은 유지) */
+.exhibitions-closed #exhibitions * {
+  visibility: hidden;
+}
+/* exhibitions-closed 상태에서 상단 메뉴의 Exhibitions 항목 숨기기 */
+.exhibitions-closed nav a[href*="Exhibitions.html"],
+.exhibitions-closed nav a[href*="/exhibitions"] {
+  visibility: hidden; /* 자리 유지하며 글씨만 숨김 */
 }
 
 /* ===== Selected Works 캡션 ===== */
