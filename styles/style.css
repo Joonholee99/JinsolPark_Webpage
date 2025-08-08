@@ -173,4 +173,10 @@ footer {
     .first-image {
         margin-top: 20px !important;
     }
+    
+    #about {
+        margin-left: 0;
+        padding: 1rem; /* 패딩은 유지하거나 조정 가능 */
+    }
+
 }
