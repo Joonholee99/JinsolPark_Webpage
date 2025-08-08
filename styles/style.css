@@ -96,7 +96,6 @@ section {
     line-height: 1.5;
     font-weight: normal;
     text-align: center;
-    margin-top: 5px;
 }
 
 /* ===== 이미지 관련 ===== */
@@ -127,11 +126,6 @@ section {
     max-width: 1000px; /* 가로형 제한 */
     max-height: 700px; /* 세로형 제한 */
     object-fit: contain;
-}
-
-/* 예외: 첫 번째 이미지는 margin-top 축소 */
-.first-image {
-    margin-top: 50px !important;
 }
 
 /* ===== 프로젝트 ===== */
@@ -173,7 +167,7 @@ footer {
     .first-image {
         margin-top: 20px !important;
     }
-    
+
     #about {
         margin-left: 0;
         padding: 1rem; /* 패딩은 유지하거나 조정 가능 */
