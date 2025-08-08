@@ -106,11 +106,15 @@ section {
 .exhibitions-closed #exhibitions * {
   visibility: hidden;
 }
-/* exhibitions-closed 상태에서 상단 메뉴의 Exhibitions 항목 숨기기 */
-.exhibitions-closed nav a[href*="Exhibitions.html"],
-.exhibitions-closed nav a[href*="/exhibitions"] {
-  visibility: hidden; /* 자리 유지하며 글씨만 숨김 */
+/* exhibitions 메뉴탭 일시적으로 모두 숨김 */
+nav a[href$="Exhibitions.html"],
+nav a[href="/exhibitions"],
+nav a[href*="/exhibitions"]{
+  pointer-events: none;    /* 클릭/탭 비활성화 */
+  cursor: default;
+  opacity: .0;            /* 흐리게 표시(원하면 지워도 됨) */
 }
+
 
 /* ===== Selected Works 캡션 ===== */
 #SelectedWorks .caption {
