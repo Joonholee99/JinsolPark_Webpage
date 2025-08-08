@@ -1,7 +1,7 @@
 /* ===== 전역 폰트 크기 변수 ===== */
 :root {
     --font-body: 16px;
-    --font-h1: 18px;
+    --font-h1: 16px;
     --font-h2: 16px;
     --font-small: 14px;
     --line: 1.6;
