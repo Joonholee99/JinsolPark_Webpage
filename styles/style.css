@@ -1,10 +1,23 @@
+/* ===== 전역 폰트 크기 변수 ===== */
+:root {
+    --font-body: 16px;
+    --font-h1: 24px;
+    --font-h2: 18px;
+    --font-small: 12px;
+    --line: 1.6;
+}
+
+/* ===== 기본 바디 설정 ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: var(--font-body);
+    line-height: var(--line);
 }
 
+/* ===== 헤더 ===== */
 header {
     background-color: white;
     color: black;
@@ -27,8 +40,10 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
+    font-size: 14px;
 }
 
+/* ===== 메인 구조 ===== */
 main {
     padding: 0;
 }
@@ -37,8 +52,9 @@ section {
     margin-bottom: 0;
 }
 
+/* ===== About 페이지 ===== */
 #about {
-    text-align: Left;
+    text-align: left;
     width: 100% auto;
     max-width: 100% auto;
     margin: 0 auto;
@@ -46,11 +62,11 @@ section {
     padding: 1rem;
     border: 1px solid white;
     }
-     #about h2 {
-        font-size: 16px; /* 제목의 글씨 크기 */
-        font-weight: bold; /* 제목을 굵게 설정 */}
-    #about p {
-    font-size: 12px; /* 본문 글씨 크기 */
+#about h2 {
+    font-size: var(--font-body); /* 제목의 글씨 크기 */
+    font-weight: bold; /* 제목을 굵게 설정 */}
+#about p {
+    font-size: var(--font-small); /* 본문 글씨 크기 */
     line-height: 1.5; /* 줄 간격 설정 */}
 
         
@@ -59,28 +75,31 @@ section {
     display: flex;
     flex-direction: column; /* 세로 정렬 */
     gap: 2rem; /* 프로젝트 간 간격 추가 */
-    align-items: Left; /* 가운데 정렬 */
+    align-items: left; /* 가운데 정렬 */
     border: 1px solid white    
 }
     #exhibitions h2 {
-    font-size: 18px; /* 제목(h3) 크기 설정 */
+    font-size: var(--font-h2); /* 제목(h2) 크기 설정 */
     font-weight: bold; /* 추가 스타일링 예시: 굵게 */}
     #exhibitions h3 {
-    font-size: 18px; /* 제목(h3) 크기 설정 */
+    font-size: var(--font-h2); /* 제목(h2) 크기 설정 */
     font-weight: normal; /* 추가 스타일링 예시: 굵게 */}
     #exhibitions p {
-    font-size: 12px; /* 일반 텍스트(p) 크기 설정 */
+    font-size: var(--font-small); /* 일반 텍스트(p) 크기 설정 */
     font-weight: normal;
     line-height: 1; /* 줄 간격 설정 */}
 
+/* ===== Selected Works 캡션 ===== */
 #SelectedWorks .caption {
     font-family: 'Noto Serif KR', serif;
-    font-size: 12px;
+    font-size: var(--font-small);
     line-height: 1.5;
     font-weight: normal;
     text-align: center;
+    margin-top: 5px;
 }
 
+/* ===== 이미지 관련 ===== */
 .image-container {
     position: relative;
     width: 100%;
@@ -100,13 +119,29 @@ section {
     object-fit: cover;
 }
 
+.responsive {
+    display: block;
+    margin: 40px auto; /* 상하 간격 + 가운데 정렬 */
+    width: auto;
+    height: auto;
+    max-width: 1000px; /* 가로형 제한 */
+    max-height: 700px; /* 세로형 제한 */
+    object-fit: contain;
+}
 
+/* 예외: 첫 번째 이미지는 margin-top 축소 */
+.first-image {
+    margin-top: 50px !important;
+}
+
+/* ===== 프로젝트 ===== */
 .project {
     border: none;
     padding: 1rem;
     margin-top: 1rem;
 }
 
+/* ===== 푸터 ===== */
 footer {
     background-color: white;
     color: white;
@@ -115,4 +150,27 @@ footer {
     position: relative; /* 고정된 위치에서 변경 */
     bottom: 0;
     width: 100%;
+}
+
+/* ===== 모바일 전용 (768px 이하) ===== */
+@media (max-width: 768px){
+  :root{
+    --font-body: 12px;   /* 전체 축소 */
+    --font-h1:   18px;
+    --font-h2:   14px;
+    --font-small: 10px;
+  }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    .responsive {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .first-image {
+        margin-top: 20px !important;
+    }
 }
