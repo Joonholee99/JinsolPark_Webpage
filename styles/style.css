@@ -110,11 +110,6 @@ section {
   visibility: hidden;   /* 레이아웃은 그대로 두고 화면만 가림 */
 }
 
-/* 섹션 높이는 유지하고 싶을 때 (옵션) */
-.exhibitions-closed #exhibitions {
-  min-height: 60vh; /* 필요 없으면 이 줄 삭제 가능 */
-}
-
 /* ===== Selected Works 캡션 ===== */
 #SelectedWorks .caption {
     font-family: 'Noto Serif KR', serif;
