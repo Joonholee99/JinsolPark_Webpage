@@ -64,7 +64,8 @@ section {
     }
 #about h1 {
     font-size: var(--font-h1); /* 제목의 글씨 크기 */
-    font-weight: bold; /* 제목을 굵게 설정 */}
+    font-weight: bold; /* 제목을 굵게 설정 */
+    margin-top: 40px;
 #about p {
     font-size: var(--font-small); /* 본문 글씨 크기 */
     line-height: 1.5; /* 줄 간격 설정 */}
@@ -83,7 +84,8 @@ section {
     margin-left: 10%;}
 #exhibitions h1 {
     font-size: var(--font-h1); /* 제목(h2) 크기 설정 */
-    font-weight: bold; /* 추가 스타일링 예시: 굵게 */}
+    font-weight: bold; /* 추가 스타일링 예시: 굵게 */
+    margin-top: 40px; }
 #exhibitions h2 {
     font-size: var(--font-h2); /* 제목(h2) 크기 설정 */
     font-weight: normal; /* 추가 스타일링 예시: 굵게 */}
