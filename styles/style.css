@@ -81,7 +81,15 @@ section {
     border: 1px solid white;    
     margin-left: 20%;}
 #exhibitions.project {
-    margin-left: 10%;}
+    margin-left: 10%;} /* project 박스 자체의 좌측 여백 통일 */
+#exhibitions .project img.responsive {
+    display: block;
+    margin-left: 0;
+    width: 40%;         /* 원하는 가로 비율 */
+    height: auto;
+    max-width: 600px;}/* 이미지와 텍스트는 project 안에서 0으로 */
+#exhibitions .project-description {
+    margin-left: 0;}
 #exhibitions h1 {
     font-size: var(--font-h1); /* 제목(h2) 크기 설정 */
     font-weight: bold; /* 추가 스타일링 예시: 굵게 */
