@@ -1,9 +1,9 @@
 /* ===== 전역 폰트 크기 변수 ===== */
 :root {
     --font-body: 16px;
-    --font-h1: 24px;
-    --font-h2: 18px;
-    --font-small: 12px;
+    --font-h1: 18px;
+    --font-h2: 16px;
+    --font-small: 14px;
     --line: 1.6;
 }
 
@@ -40,7 +40,7 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* ===== 메인 구조 ===== */
@@ -62,8 +62,8 @@ section {
     padding: 1rem;
     border: 1px solid white;
     }
-#about h2 {
-    font-size: var(--font-body); /* 제목의 글씨 크기 */
+#about h1 {
+    font-size: var(--font-h1); /* 제목의 글씨 크기 */
     font-weight: bold; /* 제목을 굵게 설정 */}
 #about p {
     font-size: var(--font-small); /* 본문 글씨 크기 */
@@ -78,10 +78,10 @@ section {
     align-items: left; /* 가운데 정렬 */
     border: 1px solid white    
 }
-    #exhibitions h2 {
-    font-size: var(--font-h2); /* 제목(h2) 크기 설정 */
+    #exhibitions h1 {
+    font-size: var(--font-h1); /* 제목(h2) 크기 설정 */
     font-weight: bold; /* 추가 스타일링 예시: 굵게 */}
-    #exhibitions h3 {
+    #exhibitions h2 {
     font-size: var(--font-h2); /* 제목(h2) 크기 설정 */
     font-weight: normal; /* 추가 스타일링 예시: 굵게 */}
     #exhibitions p {
@@ -150,13 +150,13 @@ footer {
 @media (max-width: 768px){
   :root{
     --font-body: 12px;   /* 전체 축소 */
-    --font-h1:   18px;
+    --font-h1:   16px;
     --font-h2:   14px;
     --font-small: 10px;
   }
 
     nav ul li a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .responsive {
