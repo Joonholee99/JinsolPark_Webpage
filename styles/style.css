@@ -177,6 +177,7 @@ footer {
         padding: 1rem; /* 패딩은 유지하거나 조정 가능 */
     }
     #exhibition {
+        margin-left: 10%;
         padding: 1rem; /* 패딩은 유지하거나 조정 가능 */
     }
 } 
