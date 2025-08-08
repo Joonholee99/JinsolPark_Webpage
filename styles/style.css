@@ -102,6 +102,18 @@ section {
     font-weight: normal;
     line-height: 1.3; /* 줄 간격 설정 */}
 
+/* Exhibitions 페이지 콘텐츠를 숨기고 레이아웃만 유지 */
+.exhibitions-closed #exhibitions .project,
+.exhibitions-closed #exhibitions .project-description,
+.exhibitions-closed #exhibitions .caption,
+.exhibitions-closed #exhibitions img {
+  visibility: hidden;   /* 레이아웃은 그대로 두고 화면만 가림 */
+}
+
+/* 섹션 높이는 유지하고 싶을 때 (옵션) */
+.exhibitions-closed #exhibitions {
+  min-height: 60vh; /* 필요 없으면 이 줄 삭제 가능 */
+}
 
 /* ===== Selected Works 캡션 ===== */
 #SelectedWorks .caption {
