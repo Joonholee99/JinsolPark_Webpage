@@ -24,7 +24,20 @@
         margin-bottom: 20px; /* 하단 여백 설정 */}
     .first-image {
         margin-top: 40px !important;  /* 첫번째 이미지 예외적으로 더 작은 여백 */}
-    
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #SelectedWorks {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .responsive {
+        max-width: 90%;    /* 데스크톱보다 조금 크게 */
+        margin-top: 100px;  /* 위 여백 줄임 */
+        margin-bottom: 20px;
+    }
+    .first-image {
+        margin-top: 40px !important;  /* 첫번째 이미지 예외적으로 더 작은 여백 */}
+}
     @media only screen and (max-width: 768px) {
     #SelectedWorks {
         margin-left: 0%; /* 모바일에서는 좌우여백 줄이기 */
