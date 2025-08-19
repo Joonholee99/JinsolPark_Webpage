@@ -128,10 +128,12 @@ nav a[href*="/exhibitions"]{
 #SelectedWorks .caption-style2 {
   font-family: 'Noto Serif KR', serif;
   font-size: var(--font-small);
-  line-height: 1.5;          /* 줄글 가독성 살짝 상향 */
+  line-height: 1.5;
   font-weight: normal;
-  text-align: left;          /* 가운데 정렬 해제 */
-  padding: 20%; /* 좌우에 부모 폭의 20% 여백 */;
+  max-width: 1000px;   /* 이미지의 max-width와 동일하게 */
+  margin: 0 auto;      /* 가운데 정렬 */
+  text-align: left;    /* 줄글 정렬 */
+  padding: 0 20px;     /* 글자가 이미지 폭에 딱 붙지 않게 좌우 여백 */
 }
 
 /* ===== 이미지 관련 ===== */
