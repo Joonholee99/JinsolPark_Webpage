@@ -123,6 +123,15 @@ nav a[href*="/exhibitions"]{
     line-height: 1.5;
     font-weight: normal;
     text-align: center;
+    margin: 8px;
+}
+#SelectedWorks .caption-style2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: var(--font-small);
+  line-height: 1.5;          /* 줄글 가독성 살짝 상향 */
+  font-weight: normal;
+  text-align: left;          /* 가운데 정렬 해제 */
+  margin: 8px 50px;          /* 좌우 20px 여백 */
 }
 
 /* ===== 이미지 관련 ===== */
