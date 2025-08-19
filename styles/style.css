@@ -131,7 +131,7 @@ nav a[href*="/exhibitions"]{
   line-height: 1.5;          /* 줄글 가독성 살짝 상향 */
   font-weight: normal;
   text-align: left;          /* 가운데 정렬 해제 */
-  margin: 8px 50px;          /* 좌우 20px 여백 */
+  padding: 20%; /* 좌우에 부모 폭의 20% 여백 */;
 }
 
 /* ===== 이미지 관련 ===== */
